@@ -1,0 +1,271 @@
+#contenedor {
+	background-color: #999999;
+	margin: auto;
+	height: 1800px;
+	width: 1000px;
+}
+#parte4 {
+	background-color: #FFFFFF;
+	float: left;
+	height: 610px;
+	width: 1000px;
+}
+#web {
+	float: left;
+	height: 150px;
+	width: 250px;
+}
+#search {
+}
+
+
+#footer {
+	background-color: #F0F0F0;
+	background-image: url(parte3.png);
+	background-repeat: repeat;
+	height: 320px;
+	width: 1000px;
+	float: left;
+}
+
+
+
+#menu {
+	background-color: #FFFFFF;
+	float: left;
+	height: 50px;
+	width: 1000px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+}
+#pc {
+float: left;
+	height: 350px;
+	width: 200px;
+}
+#search {
+	height: 150px;
+	width: 250px;
+	float: left;
+}
+#busq {
+	float: left;
+	height: 150px;
+	width: 200px;
+}
+#titulo3 {
+	height: 200px;
+	width: 1000px;
+}
+#users {
+	height: 170px;
+	width: 1000px;
+}
+#foot1 {
+	width: 250px;
+	height: 300px;
+	float: left;
+}
+#foot2 {
+	height: 300px;
+	width: 250px;
+	float: left;
+}
+#foot3 {
+	float: left;
+	height: 300px;
+	width: 250px;
+}
+#foot4 {
+	float: left;
+	height: 300px;
+	width: 245px;
+}
+#C1 {
+	height: 50px;
+	width: 245px;
+}
+#C2 {
+	height: 50px;
+	width: 245px;
+}
+#C3 {
+	height: 50px;
+	width: 245px;
+}
+
+
+#cab1 {
+	float: left;
+	width: 200px;
+	height: 50px;
+}
+
+#cab2 {
+	float: left;
+	height: 50px;
+	width: 100px;
+}
+#C11 {
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+
+#cab3 {
+	float: left;
+	height: 50px;
+	width: 70px;
+}
+#C111 {
+	float: left;
+	height: 50px;
+	width: 125px;
+}
+
+#C22 {
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+
+}
+#C222 {
+	float: left;
+	height: 50px;
+	width: 125px;
+}
+
+#C33 {
+	float: left;
+	height: 100px;
+	width: 100px;
+}
+
+}
+#C333 {
+	float: left;
+	height: 50px;
+	width: 125px;
+}
+#cab4 {
+	float: left;
+	height: 50px;
+	width: 70px;
+}
+
+
+
+
+
+
+#compra {
+	float: left;
+	height: 150px;
+	width: 250px;
+}
+
+#media {
+	float: left;
+	height: 150px;
+	width: 250px;
+}
+#cab5 {
+	float: left;
+	height: 50px;
+	width: 70px;
+}
+#cab6 {
+	float: left;
+	height: 50px;
+	width: 70px;
+}
+#cab7 {
+	float: left;
+	height: 50px;
+	width: 70px;
+}
+#cab8 {
+	float: left;
+	height: 50px;
+	width: 50px;
+}
+#cab9 {
+	float: left;
+	height: 50px;
+	width: 70px;
+}
+
+
+
+
+
+
+
+
+
+#portada {
+	background-image: url(PORTADA.png);
+	background-repeat: no-repeat;
+	height: 350px;
+	width: 1000px;
+	float: left;
+}
+#shop {
+	float: left;
+	height: 350px;
+	width: 250px;
+}
+#social {
+float: left;
+	height: 350px;
+	width: 200px;
+}
+#titulo {
+	height: 50px;
+	width: 1000px;
+}
+#titulo {
+	margin: auto;
+	height: 50px;
+	width: 1000px;
+}
+
+
+
+#parte3 {
+	background-color: #F0F0F0;
+	background-image: url(parte3.png);
+	float: left;
+	height: 400px;
+	width: 1000px;
+	background-attachment: fixed;
+	background-repeat: repeat;
+}
+
+
+
+#parte1 {
+	background-color: #FFFFFF;
+	float: left;
+	height: 350px;
+	width: 1000px;
+}
+#izq {
+	float: left;
+	height: 300px;
+	width: 350px;
+}
+#centro {
+	float: left;
+	height: 300px;
+	width: 300px;
+}
+
+hr { 
+  background-color: black;
+  height: 1px;
+  width: 80%;
+}
