@@ -1,0 +1,594 @@
+
+/**imagen y fondo en la palabra inicio*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active> a:hover {
+    color: #ffffff;
+    background-color: #12a3d6;
+    background-image: url(../imagenes/imgs/navigasyon/hover/hover.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+     padding-top: 15px;
+    padding-bottom: 31px;
+
+}
+
+
+/*muetra la imagen hover.png al pasar el mosuse sobre los elementos de la barra de navegacion*/
+.navbar-nav>li>a:hover {
+   color: #ffffff;
+    background-color: #ffffff;
+    background-image: url(../imagenes/menu/hover.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+     padding-top: 15px;
+    padding-bottom: 31px;
+
+
+   }
+
+/*caracteristicas del boton log de la barra de navegacion*/
+.btn-blog{
+	margin-top: 10px;
+	background-color: #f98561;
+	color: #ffffff;
+	border: none;
+	font-size: 14px;
+
+}
+/*caracteristicas del boton search*/
+.btn-search{
+	background-color: transparent;
+	border: none;
+	position:relative;
+	left: 100px;
+
+}
+/*efecto al pasar el mouse sobre el boton search */
+.btn-search:hover{
+	opacity: 0.8;
+	background-color: transparent;
+}
+ /*margen del barra navegadora*/
+ .navbar-default{
+
+ 	margin-bottom:0px;
+ }
+/*configuracion de la imagen logo de tal manera que cumpla con los espacios establecidos en la imagen psd*/
+ #logo{
+
+ 	padding-right: 50px;
+ 	padding-left: 50px;
+ }
+
+/*color de fondo y borde la lista (CIRCULOS)del carusel*/
+.carousel-indicators li{
+ background:#adadad;
+ border-color:#adadad;
+
+}
+
+/*colores que toman los elementos de la lista borde anranjado y fondo azul*/
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0px;
+    background-color: #2190c1;
+    border-color: #2190c1;
+   border: 3px solid #f98561;
+
+
+}
+/*ubicacion del texto del carrusel(bordes del area) */
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    color: #fff;
+    text-align: center;
+    
+}
+/*alineacion de los elementos de la lista(circulos) en carusel*/
+.carousel-indicators{
+
+	margin-left: 50px;
+}
+
+/*ubicacion del titulo del carusel*/
+#titulocarusel{
+	
+	text-align: center;
+	position: relative;
+top: -80px;
+}
+
+/*alineacion del parrafo del carusel */
+#parrafocarusel{
+	position: relative;
+	text-align: center;
+	position: relative;
+top: -70px;
+}
+
+/*caracteristicas del boton central del carusel*/
+.btn-link{
+
+   border: 20px solid #f98561;
+   background: #f98561;
+   border-radius: 4px;
+   position: relative;
+top: -60px;
+color:white;
+
+width: 200px;
+height: 1px;
+margin-left: 43px;
+margin-right: auto;
+padding-top: 0px;
+padding-bottom: 18px;
+   
+
+}
+/*efecto del boton del carusel al pasar el mouse*/
+.btn-link:hover{
+  
+background:#2190c1;
+color:white; 
+}
+
+/*boton entre la seccion carusel y el header*/
+.btn.btn-primary{
+
+   border: 20px solid #2190c1;
+   background: #2190c1;
+   border-radius: 4px;
+  position: relative;
+top: -90px;
+color:white;
+margin-top: 61px;
+margin-left: 434px;
+width: 120px;
+height: 5px;
+font-size:8px;
+padding-top: 0px;
+padding-bottom: 6px;
+}
+/*centrar imagenes que contengan la clase img-responsive*/
+.img-responsive{
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+
+/*configuracion de las caracteristicas del contenido es decir el area que se encuentra debajo de la seccion carusel*/
+#contenido{
+  background: #f4f4f4;
+  margin-top: -107px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-left: 0px;
+  margin-right: 0px;
+  border: 1px solid  #CCC;
+
+}
+/*cofiguracion de las caracteristicas de la seccion1 que se encuentra debajo de la seccion contenido */
+#seccion1{
+background: #2e3e4f;
+margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+
+}
+
+/*caracteristicas que deben tomar los elementos que contengan la clase img-thumnail por ejemplo en la seccion1 el div izquierda*/
+
+.img-thumbnail{
+
+    background: #bebebe;
+     border: 10px solid  #ffffff;
+   width: 200px;
+   height: 150px;
+   margin-left: auto;
+margin-right: auto;
+
+
+}
+
+/*se configura para que la imagen camara quede al centro del div izquierda asi para los demas divs de la seccion2*/
+
+
+.center-block{
+
+margin-top: 46px;
+margin-bottom:46px;
+
+}
+/*caracteristicas para configurar la seccion1 por ejemplo el titulo web design */
+.panel-title{
+
+  font-size: 16px;
+  font-weight: bold;
+}
+/*tamaño de la letra de los parrafos de la seccion1 debajo del carusel*/
+.panel-body{
+
+  font-size: 12px;
+}
+/*clase con la cual se configura el titulo de la seccion1(our portfolio)*/
+.titulo.text-left{
+
+  color:#f98561;
+  padding-left: 34px;
+}
+
+/*configuracion boton (more works)*/
+.btn3.btn-link{
+
+   border: 5px solid #2190c1;
+   background: #2190c1;
+   border-radius: 4px;
+  width: 83px;
+      margin-right: 35px;
+      margin-top: 15px;
+        font-size: 10px;
+  
+
+}
+/*efectos al pasar el mouse sobre el boton(more works)*/
+.btn3.btn-link:hover{
+   border: 5px solid #f98561;
+
+  background:  #f98561;
+
+  color:white;
+}
+
+/*margen de la imagen numero3 la que contiene la imagen ojo de tal manera que quede alineada con las demas */
+.imagen3.img-thumbnail.center-block{
+
+  margin-top: 5px;
+
+}
+/*Alineacion de la imagen ojo para que esta imagen se encuentre centrada a la izquierda y al centro  dentro de la clase img-thumbnail*/
+.ojo.img-responsive.pull-left{
+    margin-left: 28px;
+    margin-top: 0px;
+    margin-left: 0px;
+
+
+}
+/*Creacion del rectangulo que contiene a la imagen ojo y la palabra details del tipo de clase img-thumbnail*/
+.ojo.img-thumbnail.center-block{
+background: #bebebe;
+     border: 1px solid  #ffffff;
+
+    width: 100.22222px;
+    height: 30.22222px;
+    font-size: 14px;
+    color:white;
+    text-align: center;
+
+}
+/*color de letra del link details que se encuentra al lado de la imagen ojo */
+#linkojo{
+  color:#ffffff;
+    text-align: center;
+}
+/*caracteristicas titulo WHAT WE OFFER*/
+.titulo2.text-left{
+
+  color:#f98561;
+  font-size: 13px;
+  margin-left: -15px;
+}
+
+/*caracteristicas de los parrafos en la seccion2*/
+.subtitulo.text-left{
+color: #bebebe;
+ margin-left: -15px;
+ font-size:9px;
+}
+
+/*titulo de la imagen 3 seccion1 */
+.titulo3.text-left{
+
+  color:#f98561;
+  font-size: 13px;
+
+      margin-left: -55px;
+    margin-top: 53px;
+}
+/*subtitulo de la imagen3 seccion1*/
+.subtitulo3.text-left{
+color: #bebebe;
+    margin-left: -53px;
+ font-size:9px;
+}
+
+
+.titulos2.panel-title.text-center{
+
+  color:#2190c1;
+  font-size: 25px;
+}
+
+
+/*caracteristicas seccion2*/
+
+#seccion2{
+background: #f4f4f4;
+margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  padding-left: 60px;
+  padding-right: 60px;
+      border: 1px solid #CCC;
+      border-bottom-style:none; 
+
+
+}
+
+.subtitulos2.text-center{
+  font-size: 12px;
+      padding-right: 146px;
+    padding-left: 146px;
+        padding-bottom: 60px;
+}
+/*parrafos de la seccion2*/
+.parrafos.text-left.panel-body{
+      padding-left: 0px;
+    padding-top: 0px;
+}
+/*botones de la seccion 2 (details)*/
+.btn4.btn-link.pull-right{
+
+
+   border: 0px solid #2190c1;
+   background: #2190c1;
+   border-radius: 4px;
+  width: 53px;
+      margin-right: 13px;
+      margin-top: 15px;
+        font-size: 11px;
+  
+
+}
+/*parrafo debajo de la palabra testimonials*/
+.sub.text-center{
+      padding-right: 146px;
+    padding-left: 146px;
+    font-weight: bold;
+}
+/*titulo de autor John Doe*/
+.autor.text-center{
+  color:#f98561;
+
+
+}
+/*alineacion de la barra ploma del lado izquierdo*/
+
+
+.barrap.img-responsive.pull-right{
+
+  padding-top: 5px;
+}
+
+/*caracteristicas seccion 3*/
+
+#seccion3{
+background: #f4f4f4;
+margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 70px;
+  padding-left: 60px;
+  padding-right: 60px;
+      border: 1px solid #CCC;
+      padding-bottom: 0px;
+      border-top-style: none;
+
+}
+
+/*caracteristicas del footer*/
+
+#footer{
+
+  background: #2e3e4f;
+margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: -4px;
+
+}
+/*tamaño al usar las etiquetas h3*/
+h3{
+
+
+  font-size: 14px;
+}
+/**links del footer  */
+#linkf{
+  text-align: left;
+  font-size: 9px;
+}
+/*frases de color plomo en el footer */
+.subtitulof.text-left{
+color: #bebebe;
+ margin-left: 0px;
+ font-size:9px;
+ margin-bottom: 0px;
+}
+/*caracteristias de las etiquetas hr y h4*/
+hr{
+
+  margin-top: 8px;
+}
+h4{
+  font-size:9px;
+      color: #337ab7;
+}
+
+/*boton(sign up) del footer */
+.btn6.pull-right{
+    border: 0px solid #2190c1;
+    border-radius: 4px;
+    background: #0096dc;
+    padding-top: 0px;
+    padding-left: 7px;
+    margin-top: 1px;
+    font-size: 15px;
+    margin-top: 13px;
+    text-align: center;
+    color:white;
+
+}
+/*cuadrados de color blanco del footer*/
+.cuadros.img-thumbnail{
+    background: white;
+    border: 10px solid #ffffff;
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*tercera columna footer */
+.col-md-8{
+
+  margin-top: 38px;
+}
+
+.segundo.col-md-8{
+
+  margin-top: -21px;
+}
+
+
+.tercero.col-md-8{
+
+  margin-top: -20px;
+}
+
+
+
+
+
+/*ubicacion de la imagen telefono en el footer */
+.telefono.img-responsive.pull-left
+{
+
+
+      padding-top: 5px;
+}
+
+/*ubicacion de la imagen smartphone en el footer */
+
+
+.samrt.img-responsive.pull-left
+{
+
+
+margin-top: 12px;
+
+}
+/*ubicacion de la imagen mensaje en el footer */
+
+.mensaje.img-responsive.pull-left{
+
+margin-top: -27px;
+
+}
+
+/*ubicacion de los numeros de la cuarta columna*/
+.numeros.col-md-8{
+
+  color: #bebebe;
+    margin-left: 0px;
+    font-size: 9px;
+    margin-bottom: 0px;
+    margin-top: -14px;
+}
+
+.datos1.text-left{
+
+  margin-top: -8px;
+}
+
+
+.numeros2.col-md-8{
+
+      color: #bebebe;
+    margin-left: 0px;
+    font-size: 9px;
+    margin-bottom: 0px;
+        margin-top: -5px;
+}
+
+.datos3.text-left{
+
+    margin-top: -7px;
+}
+
+.mensaje.img-responsive.pull-left {
+    margin-top: 13px;
+}
+.correos.col-md-8{
+
+ color: #bebebe;
+    margin-left: 0px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    margin-top: 7px;
+
+}
+
+.correo1.text-left{
+
+margin-top: -6px;
+
+}
+.titulof.text-left{
+
+color:#f98561;
+
+}
+/*configuracion de las imagenes hombre y mujer de la seccion 3 de tal manera que queden alineados como la imagen psd*/
+.triangulo.img-responsive.pull-center{
+  margin-bottom: -2px;
+
+}
+
+.barrap.img-responsive.pull-right
+{
+
+  margin-right: -32px;
+}
+.mujer.img-responsive.pull-right{
+margin-right: -26px;
+
+}
+
+
+.barrap1.img-responsive.pull-left
+{
+
+padding-top: 5px;
+    margin-left: -32px;
+}
+.mujer2.img-responsive.pull-left{
+margin-left: -26px;
+  
+}
+
+
