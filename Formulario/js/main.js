@@ -226,18 +226,53 @@ $('#txtcanton').on('change', function(event) {
 
 
 var td,campo,valor,id;
+
+/*al dar click sobre un td que contenga la clase editable y un span */
     $(document).on("click","td.editable span",function(e)
     {
       e.preventDefault();
-
-      /*a la etiqueta que no contenga un id remueva la clase editable*/
+      /*a las etiquetas td que no contengan id remueva la clase editable*/
       $("td:not(.id)").removeClass("editable");
+      /*elige  el selector con el this en este caso al dar click sobre un span es decir toma al selector span con la funcion closest elige al td mas inmedianto al span */
 
+      td=$(this).closest("td");
+
+      /*lo que hace es guardar en la variable campo el valor de que contenga el atributo data-campo de tal manera que se almacenara en esta variable el nombre del campos
+      sobre el cual damos click */
 
       campo=$(this).closest("td").data("campo");
+
+
+      /*al dar click sobre el span lo que hace es tomar el valor que contenga el campo td  para almacenarlo en la variable valor*/
       valor=$(this).text();
+
+
+         /*al dra click sobre el span toma al selector span busca el tr inmediato a este y el tr mas inmedianto busca un atributo id y con la funcion texto obtiene el valor 
+         que tiene este id */
       id=$(this).closest("tr").find(".id").text();
-      td.text(" ").html("<input type='text'  name='"+campo+"' value='"+valor+"'><button id=modificar>modificar</button>");
+
+
+         /*al dar click sobre el td se  hace el cambio del td por un input el cual al dar click tendra el nombre del campo el valor de la variable valor el cual se mostrara 
+         dentro del input*/
+
+   /*validacion del campo de tal manera que si se da click sobre el campo contraseña se agregue un input de tipo contraseña caso contrario se agrega un input de tipo texto*/
+
+         if (campo=="contrasena"){
+
+
+            td.text("").html("<input type='password'  name='"+campo+"' value='"+valor+"'><button id=modificar>modificar</button><button id=cancelar>cancelar</button>");
+
+
+         }
+
+
+         else{
+
+      td.text("").html("<input type='text'  name='"+campo+"' value='"+valor+"'><button id=modificar>modificar</button><button id=cancelar>cancelar</button>");
+
+
+      }
+
     });
 
 
@@ -248,33 +283,77 @@ $(document).on("click","#modificar",function(e)
     {
       
       e.preventDefault();
+
+
+
+      /*guarda en la variable nuevovalor el valor que se digito dentro del input */
+
       nuevovalor=$(this).closest("td").find("input").val();
+
+
+
+
+
+
+
       if(nuevovalor!="")
       
       {
         $.ajax({
-          type: "POST",
-          url: "rpc/actualizar.php",
-          data: { 
-            campo: campo, 
-            valor: nuevovalor, 
-            id:id }
-        })
-
+                      type: "POST",
+                      url: "rpc/actualizar.php",
+                      data: { 
+                                campo: campo, 
+                                valor: nuevovalor, 
+                                id:id 
+                            }
+                })
+          
 
         .done(function( msg ) {
+
+          /*si todo salio bien se muestra un mensaje de exito que muestra que la modificacion fue realizada ademas muestra en el input el nuevo valor que se digito 
+          si es que una contraseña nos muestra la palabra cambiar y se le agrega la clase editable de tal manera que se pueda editar nuevamente en el caso de que se solo 
+          datos nos muestar el valor editado*/
           
             $("#mensaje_modificacion").html(msg).addClass('alert-success').show().fadeOut(3000);
-         td.html("<span>"+nuevovalor+"</span>");
-          $("td:not(.id)").addClass("editable");
+
+                if(campo=="contrasena"){
+
+                      td.html("<span>cambiar</span>");
+                      $("td:not(.id)").addClass("editable");
+
+                }
+
+                      else{
+                               td.html("<span>"+nuevovalor+"</span>");
+                                $("td:not(.id)").addClass("editable");
+
+
+                                }
         });
       }
 
 
       else 
-
+/*si el cambo que queremos editar se encuentra vacio envia un mensaje que exige al usuario que se ingrese un valor para poder modificar */
         $("#mensaje_modificacion").html("<p class='alert-danger'>Debes ingresar un valor</p>").show().fadeOut(3000);
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   $( "#buscar" ).keyup(function(event)
@@ -307,6 +386,13 @@ $(document).on("click","#modificar",function(e)
 
 
   });
+
+$(document).on("click",".cancelar",function(event)
+    {
+      event.preventDefault();
+      td.html("<span>"+valor+"</span>");
+      $("td:not(.id)").addClass("editable");
+    });
 
   
 })
